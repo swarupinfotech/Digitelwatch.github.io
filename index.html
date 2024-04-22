@@ -1,0 +1,92 @@
+<!-- 
+   ❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃
+        Created by SwarupInfotech                          
+   ❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃❁❃ 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>🕰....🕰</title>
+<link rel="stylesheet"  
+  href="style.css">
+  <script>alert ("Click the screen for sound⏱️");</script>
+  <link rel="stylesheet" href="style.css"></style>
+  <script src="ok.js"></script>
+</head>
+<body>
+<a href="https://swarupinfotech.github.io/">⏱️clock⏱️</a> 
+<div class="tuk">
+
+           <div class="base1"></div>      
+         <div class="circle"></div>
+       <div class="ride"></div>   
+       <div class="tukk">       
+         <div class="hole"></div> 
+           <div class="shadow"></div>  
+        
+  
+                   <div class="watch">
+                   <div class="one">i </div>
+                  <div class="two">ii</div>
+               <div class="three">iii</div>
+                 <div class="four">iv</div>
+                     <div class="five"> v</div>
+                        <div class="six">vi</div>
+                        <div class="seven"> vii</div>
+                        <div class="eight">viii</div>
+                        <div class="nine">ix</div>
+                        <div class="ten">x</div>
+                        <div class="eleven">xi </div>
+                        <div class="twelve">xii</div>
+</div>
+ 
+         <div id="hour"></div>
+      <div id="minute"></div>
+      <div id="seconds"></div>
+         <div class="center"></div>
+</div>
+        <div class="shaddow"></div>
+      <div class="inner_body"></div>
+    <div class="watch_2"></div>
+  <div class="box"></div>
+  <div class="box_hand"></div>
+    <div class="rack"></div>
+     <div class="sh_in"></div>
+        <div class="glass"></div>
+        <div class="glass2"></div>
+        <div class ="taddy"><img src="https://i.ibb.co/KVXQCg5/6571828.png" alt="6571828" border="0"></div>
+</div> 
+
+<script>
+  var hour = document.getElementById("hour");
+  var minute = document.getElementById("minute");
+  var seconds = document.getElementById("seconds");
+
+  var clock = setInterval(function clock() {
+    var date = new Date();
+    var hr = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+
+    var hr_setup = (hr * 30) + (min / 2);
+    var min_setup = (min * 6) + (sec / 10);
+    var sec_setup = sec * 6;
+
+    hour.style.transform = 'rotate(' + hr_setup + "deg)";
+    minute.style.transform = 'rotate(' + min_setup + 'deg)';
+    seconds.style.transform = 'rotate(' + sec_setup + 'deg)';
+  }, 1000);
+</script>  
+<audio src="https://www.dropbox.com/s/dt2972t4xat30zd/y2mate.com%20-%20clock%20ticking%20sound%20effect.mp3?raw=1","  loop="loop" id="music"></audio>
+
+    
+<script>
+var music = document.getElementById("music")
+music.load();
+document.addEventListener("click", function() {
+music.play()
+})
+</script> 
+
+</body>
+</html>
